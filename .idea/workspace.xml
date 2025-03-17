@@ -4,28 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e0c4d4-dc8e-4eb4-b0a8-4e969ffb6d85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Py5XAutomationFramework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/constants/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/pageObjects/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/Sample/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/Sample/test_sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/Sample/test_vwologin_Not_Optimized.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/katalonStudio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tests/vwoLogin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/util/Utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/util/__init__.py" afterDir="false" />
+    <list default="true" id="c4e0c4d4-dc8e-4eb4-b0a8-4e969ffb6d85" name="Changes" comment="Framework Ready">
+      <change afterPath="$PROJECT_DIR$/test/constants/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageFactory/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageFactory/dashboard_PageFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageFactory/loginPage_PageFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageObjectModel/VWO/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageObjectModel/VWO/dashboardPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageObjectModel/VWO/freeTrialpage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageObjectModel/VWO/loginPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pageObjects/PageObjectModel/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tests/vwoLogin/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tests/vwoLogin/test_vwo_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tests/vwoLogin/test_vwo_login_pf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/util/Common_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +36,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Wowvision/Py5XAutomationFramework.git",
-    "accountId": "0bb58cb3-d2a8-4af3-8a63-ca3da810cd5f"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Wowvision&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Wowvision/Py5XAutomationFramework.git&quot;,
+    &quot;accountId&quot;: &quot;0bb58cb3-d2a8-4af3-8a63-ca3da810cd5f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2tTT0Q5wdAvA3qWMn7ZqmzskYe5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,80 +59,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_vwologin_Not_Optimized.test_app_vwo_login_chrome.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_vwo_login.test_vwo_negitive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_vwologin_Not_Optimized.test_app_vwo_login_chrome.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/varti/PycharmProjects/5XAutomationFramework/test/tests/Sample&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="Py5XAutomationFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varti\PycharmProjects\5XAutomationFramework\test\tests\Sample" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_vwo_login.test_vwo_negitive">
+    <configuration name="Python tests for test_vwo_login.test_vwo_negitive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Py5XAutomationFramework" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/tests/vwoLogin" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="Py5XAutomationFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="Py5XAutomationFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vwo_login.test_vwo_negitive&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_vwologin_Not_Optimized.test_app_vwo_login_chrome" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -150,42 +104,9 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="Py5XAutomationFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="Py5XAutomationFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_vwo_login.test_vwo_negitive" />
         <item itemvalue="Python tests.Python tests for test_vwologin_Not_Optimized.test_app_vwo_login_chrome" />
       </list>
     </recent_temporary>
@@ -206,6 +127,19 @@
       <option name="presentableId" value="Default" />
       <updated>1740374840407</updated>
     </task>
+    <task id="LOCAL-00001" summary="Framework Ready">
+      <option name="closed" value="true" />
+      <created>1740660462607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740660462607</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Framework Ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework Ready" />
   </component>
 </project>
